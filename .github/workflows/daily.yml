@@ -19,8 +19,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --global user.name "Dhanya Sree"
+          git config --global user.name "Dhanya Sree K G"
           git config --global user.email "dhanyakathir2005@gmail.com"
           git add .
-          git commit -m "Daily automated contribution"
+          git commit -m "Daily automated contribution" || echo "No changes to commit"
           git push
