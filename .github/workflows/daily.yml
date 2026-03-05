@@ -1,0 +1,26 @@
+name: Daily Contribution
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # Runs daily at 8:30 AM IST
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Update timestamp
+        run: |
+          echo "Last updated: $(date)" > update.txt
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "Dhanya Sree"
+          git config --global user.email "dhanyakathir2005@gmail.com"
+          git add .
+          git commit -m "Daily automated contribution"
+          git push
