@@ -105,3 +105,4 @@ Refactored code - Sun Apr  5 14:24:50 UTC 2026
 Learning progress - Sun Apr  5 14:24:50 UTC 2026
 Minor improvements - Sun Apr  5 14:24:50 UTC 2026
 Fixed bug - Mon Apr  6 14:39:10 UTC 2026
+Updated notes - Mon Apr  6 14:39:10 UTC 2026
